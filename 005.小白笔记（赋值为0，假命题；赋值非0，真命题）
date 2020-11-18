@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+ int a;
+ printf("请输入一个0或非0数\n");
+ scanf("%d",&a);
+ if(a){
+	 printf("真命题\n");
+
+}
+ else{
+	 printf("假命题\n");
+ }
+ return 0;
+}
