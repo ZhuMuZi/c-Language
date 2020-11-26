@@ -7,8 +7,8 @@ int main()
 	int c;
 	int day;
 	while(1){
-		printf("现在是%d秒\n",a);
-		Sleep(1000);		
+		Sleep(1000);
+		printf("现在是%d秒\n",a);		
 		a++;
 		if(a>60){
 			break;
@@ -17,8 +17,8 @@ int main()
 	a=0;
 	b=1;
 	while(1){
-		printf("现在是%d分钟%d秒\n",b,a);
 		Sleep(1000);
+		printf("现在是%d分钟%d秒\n",b,a);
 		a++;
 		if(a==60){
 			a=0;
@@ -31,8 +31,8 @@ int main()
 	b=0;
 	c=1;
 	while(1){
-		printf("现在是%d小时%d分钟%d秒\n",c,b,a);
 		Sleep(1000);
+		printf("现在是%d小时%d分钟%d秒\n",c,b,a);
 		a++;
 		if(a==60){
 			a=0;
@@ -49,8 +49,8 @@ int main()
 	c=0;
 	day=1;
 	while(1){
-		printf("现在是%d天%d小时%d分钟%d秒\n",day,c,b,a);
 		Sleep(1000);
+		printf("现在是%d天%d小时%d分钟%d秒\n",day,c,b,a);
 		a++;
 		if(a==60){
 			a=0;
