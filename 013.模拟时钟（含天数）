@@ -62,7 +62,7 @@ int main()
 		}
 		else if(c==24){
 			c=0;
-			day=1;
+			day++;
 		}
 	}
 	return 0;
