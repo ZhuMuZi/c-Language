@@ -2,7 +2,7 @@
 int main()
 {
 	int w;
-    printf("大学查询\n");
+        printf("大学查询\n");
 	printf("请输入一个1~20之间的数字\n");
 	scanf("%d",&w);
 	switch(w)
