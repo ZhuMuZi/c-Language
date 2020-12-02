@@ -7,8 +7,8 @@ int main()
 	scanf("%d",&w);
 	switch(w)
 	{
-	    case 1:printf("清华大学\n");break;
-	    case 2:printf("北京大学\n");break;
+	        case 1:printf("清华大学\n");break;
+	        case 2:printf("北京大学\n");break;
 		case 3:printf("复旦大学\n");break;
 		case 4:printf("浙江大学\n");break;
 		case 5:printf("南京大学\n");break;
@@ -27,7 +27,7 @@ int main()
 		case 18:printf("山东大学\n");break;
 		case 19:printf("天津大学\n");break;
 		case 20:printf("北京师范大学\n");break;
-	    default:printf("*** University\n");
+	        default:printf("*** University\n");
 	}
 	return 0;
 }
