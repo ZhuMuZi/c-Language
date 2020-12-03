@@ -1,122 +1,24 @@
 #include<stdio.h>
-#include<windows.h>
-int b=1;
-int a=0;
-int c=1;
-void seconds1()
-{
-
-	while(1){
-		if(a<10){
-			Sleep(100);
-			printf("00:00:0%d\n",a);
-			a++;
-		}
-		else if(a<60){
-			Sleep(100);
-			printf("00:00:%d\n",a);
-			a++;
-		}
-		else{
-			break;
-		}
-	
-	}
-}
-void seconds2()
-{
-
-	while(1){
-		a++;
-		if(a<10){
-			Sleep(100);
-			printf("00:0%d:0%d\n",b,a);
-		}
-		else if(a<60){
-			Sleep(100);
-			printf("00:0%d:%d\n",b,a);
-		}
-		else{
-			b++;
-			break;
-		}
-	
-	}
-}
-void seconds3()
-{
-
-	while(1){
-		a++;
-		if(a<10){
-			Sleep(100);
-			printf("00:%d:0%d\n",b,a);
-		}
-		else if(a<60){
-			Sleep(100);
-			printf("00:%d:%d\n",b,a);
-		}
-		else{
-			b++;
-			break;
-		}
-	
-	}
-}
-void seconds4()
-{
-
-	while(1){
-		a++;
-		if(a<10&&b<10&&c<10){
-			Sleep(100);
-			printf("0%d:0%d:0%d\n",c,b,a);
-		}
-		else if(a>=10a<60){
-			Sleep(100);
-			printf("00:%d:%d\n",b,a);
-		}
-		else{
-			b++;
-			break;
-		}
-	
-	}
-}
-
 int main()
 {
-	seconds1();
-	while(1){
-    if(a==60&&b<10){
-            Sleep(100);
-		    printf("00:0%d:00\n",b);
-			a=0;
-			seconds2();
+	int a,b,c;
+	int a1[]={1,2,3};
+	int a2d[2][3]={
+		{1,2,3},
+		{4,5,6}
+	};
+	for(a=0;a<3;a++){
+		printf("%d",a1[a]);
 	}
-	else if(
-		    a==60&&b>=10&&b<60){
-            Sleep(100);
-		    printf("00:%d:00\n",b);
-			a=0;
-			seconds3();
-	 }
-	else if(b==59&&c<10){
-            Sleep(100);
-		    printf("0%d:00:00\n",c);
-			a=0;
-			b=0;
-			seconds4();
-	}
-	else if(b==59&&c>=10&&c<=24){
-            Sleep(100);
-		    printf("%d:00:00\n",b);
-			a=0;
-			b=0;
-			seconds5();
-	}
-		   
-	}
+	printf("\n");
+	for(b=0;b<2;b++){
+		for(c=0;c<3;c++){
+			printf("%d",a2d[b][c]);
+		}
+		printf("\n");
 	}
 	return 0;
 }
+		
+					
+
