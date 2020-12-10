@@ -2,10 +2,11 @@
 #include<string.h>
 int main()
 {
-	char a1[]="开始";
+	char a1[]="宝塔镇河妖";
 	char a2[10];
-	printf("猜数字游戏开始啦\n");
-	scanf("%s",a2);
+	printf("****猜数字游戏****\n");
+	printf("口令：天王盖地虎\n");
+	gets(a2);
 	if(strcmp(a1,a2)==0){
 		printf("游戏开始\n");
 		while(1)
@@ -32,7 +33,7 @@ int main()
 	}
 	}
 	else{
-		printf("错误,请输入“开始”\n");
+		printf("错误”\n");
 	}
 	return 0;
 }
